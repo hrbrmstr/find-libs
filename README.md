@@ -1,5 +1,13 @@
 # find-libs
+
 Find all `library()` calls in R files in a directory tree
+
+(Handles the edge-case where a coder used named-parameters, possibly in a wacky order, too).
+
+## Limitations
+
+- Does not find `require()` calls.
+- Does not find `library()` calls inside functions (could be expanded tho)
 
 ## Example
 
